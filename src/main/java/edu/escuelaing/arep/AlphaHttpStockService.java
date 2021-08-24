@@ -21,7 +21,6 @@ public class AlphaHttpStockService extends HttpStockService{
             url= "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol="+stock+"&apikey=A1TWI206BXZQBL63";
         }
         return url;
-        //return url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol="+stock+"&interval=5min&apikey=A1TWI206BXZQBL63";
     }
 
     @Override
