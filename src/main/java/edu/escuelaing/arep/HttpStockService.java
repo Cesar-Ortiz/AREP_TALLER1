@@ -9,7 +9,7 @@ import java.net.URL;
 public abstract class HttpStockService {
     private static final String USER_AGENT = "Mozilla/5.0";
 
-    public String getFbData() throws IOException {
+    public String getXData() throws IOException {
 
         String responseStr = "None";
         URL obj = new URL(getUrl());
