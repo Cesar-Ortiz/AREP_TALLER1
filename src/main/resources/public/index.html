@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 	<script src="appiclient.js"></script>
 </head>
@@ -12,13 +14,13 @@
 		<h2>HTML Forms</h2>
         <form action="results">
 			Compañia:<br>
-			<input id="symbol" type="text" name="Compañia" value="Mickey">
+			<input id="symbol" type="text" name="Compañia" placeholder="Simbolo">
 			<br><br>
-			<button id="intra" type="button" value="Time Series (5min)" onclick="app.getIntraday($('#symbol').val(), $('#intra').val(), 'intra')"> Intraday </button>
-			<button id="daily" type="button" value="Time Series (Daily)" onclick="app.getIntraday($('#symbol').val(), $('#daily').val(), 'daily')"> Daily </button>
-			<button id="weekly" type="button" value="Weekly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#weekly').val(), 'weekly')"> Weekly </button>
-			<button id="monthly" type="button" value="Monthly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#monthly').val(), 'monthly')"> Monthly </button>
-			<table class="default">
+			<button id="intra" type="button" class="btn btn-success" value="Time Series (5min)" onclick="app.getIntraday($('#symbol').val(), $('#intra').val(), 'intra')"> Intraday </button>
+			<button id="daily" type="button" class="btn btn-success" value="Time Series (Daily)" onclick="app.getIntraday($('#symbol').val(), $('#daily').val(), 'daily')"> Daily </button>
+			<button id="weekly" type="button" class="btn btn-success" value="Weekly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#weekly').val(), 'weekly')"> Weekly </button>
+			<button id="monthly" type="button" class="btn btn-success" value="Monthly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#monthly').val(), 'monthly')"> Monthly </button>
+			<table class="table table-dark table-striped">
 				<thead>
 				<tr>
 					<th> Date </th>
