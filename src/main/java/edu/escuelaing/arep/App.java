@@ -24,18 +24,19 @@ public class App {
         res.type("application/json");
         String stock = req.params(":symbol");
         String function = req.params(":function");
+        String key = stock+function;
         String response = "None";
         HttpStockService stockService = CurrentServiceInstance.getInstance().getService();
         
 
         if(stock != null && stock != ""){
-            String data = cache.getCache(stock, function);
+            String data = cache.getCache(key);
             if(data.equals("")){
                 stockService.setUrl(function);
                 stockService.setStock(stock);
                 try {
                     response = stockService.getXData();
-                    cache.saveCache(stock, function, response);
+                    cache.saveCache(key, response);
                 }
                 catch (IOException ex){
                     Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
