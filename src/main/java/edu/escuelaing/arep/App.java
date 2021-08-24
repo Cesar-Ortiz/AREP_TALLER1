@@ -23,7 +23,6 @@ public class App
     }
 
     private static String getXData(Request req, Response res){
-        System.out.println("entroooooooooo");
         res.type("application/json");
         String stock = req.params(":symbol");
         String function = req.params(":function");

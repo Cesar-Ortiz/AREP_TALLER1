@@ -2,6 +2,10 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script src="app.js"></script>
+	<script src="appiclient.js"></script>
 </head>
 
 	<body>
@@ -10,10 +14,10 @@
 			Compañia:<br>
 			<input id="symbol" type="text" name="Compañia" value="Mickey">
 			<br><br>
-			<button id="intra" type="button"> Intraday </button>
-			<input type="button" value="Daily">
-			<input type="button" value="Weekly">
-			<input type="button" value="Monthly">
+			<button id="intra" type="button" value="Time Series (5min)" onclick="app.getIntraday($('#symbol').val(), $('#intra').val(), 'intra')"> Intraday </button>
+			<button id="daily" type="button" value="Time Series (Daily)" onclick="app.getIntraday($('#symbol').val(), $('#daily').val(), 'daily')"> Daily </button>
+			<button id="weekly" type="button" value="Weekly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#weekly').val(), 'weekly')"> Weekly </button>
+			<button id="monthly" type="button" value="Monthly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#monthly').val(), 'monthly')"> Monthly </button>
 			<table class="default">
 				<thead>
 				<tr>
