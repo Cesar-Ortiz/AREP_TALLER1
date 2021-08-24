@@ -8,18 +8,26 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 	<script src="appiclient.js"></script>
+	<style>
+		body { background-color: #15A571; }
+	</style>
 </head>
 
 	<body>
-		<h2>HTML Forms</h2>
+		<center>
+		<h2>Alpha Vantage</h2>
+		</center>
         <form action="results">
+			<center>
 			Compañia:<br>
 			<input id="symbol" type="text" name="Compañia" placeholder="Simbolo">
 			<br><br>
-			<button id="intra" type="button" class="btn btn-success" value="Time Series (5min)" onclick="app.getIntraday($('#symbol').val(), $('#intra').val(), 'intra')"> Intraday </button>
-			<button id="daily" type="button" class="btn btn-success" value="Time Series (Daily)" onclick="app.getIntraday($('#symbol').val(), $('#daily').val(), 'daily')"> Daily </button>
-			<button id="weekly" type="button" class="btn btn-success" value="Weekly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#weekly').val(), 'weekly')"> Weekly </button>
-			<button id="monthly" type="button" class="btn btn-success" value="Monthly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#monthly').val(), 'monthly')"> Monthly </button>
+			<button id="intra" type="button" class="btn btn-dark" value="Time Series (5min)" onclick="app.getIntraday($('#symbol').val(), $('#intra').val(), 'intra')"> Intraday </button>
+			<button id="daily" type="button" class="btn btn-dark" value="Time Series (Daily)" onclick="app.getIntraday($('#symbol').val(), $('#daily').val(), 'daily')"> Daily </button>
+			<button id="weekly" type="button" class="btn btn-dark" value="Weekly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#weekly').val(), 'weekly')"> Weekly </button>
+			<button id="monthly" type="button" class="btn btn-dark" value="Monthly Time Series" onclick="app.getIntraday($('#symbol').val(), $('#monthly').val(), 'monthly')"> Monthly </button>
+			</center>
+			<br>
 			<table class="table table-dark table-striped">
 				<thead>
 				<tr>
