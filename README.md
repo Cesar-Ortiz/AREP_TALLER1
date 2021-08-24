@@ -3,9 +3,9 @@
 César Fernando Ortiz Rocha
 
 ## Despliegues
-#### 🚀 Despliegue java [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://sparkwebprimero.herokuapp.com/getTime/ibm/daily)
- 
-#### 🚀 Despliegue jscrip [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://sparkwebprimero.herokuapp.com)
+#### 🚀 Despliegue API Client (Java) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://sparkwebprimero.herokuapp.com/getTime/ibm/daily)
+
+#### 🚀 Despliegue WEB Client (JavasScript) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://sparkwebprimero.herokuapp.com)
 
 ## 📈 Arquitectura
 
