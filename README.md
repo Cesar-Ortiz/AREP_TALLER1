@@ -10,7 +10,7 @@ César Fernando Ortiz Rocha
 ## 📈 Arquitectura
 
 ### Diagrama de clases
-![](img/DiagamaDeClases.PNG)
+![](img/DiagramaDeClases.PNG)
 ### Diagrama de despliegue
 ![](img/DiagramaDespliegue.PNG)
 ## Meroria cache
